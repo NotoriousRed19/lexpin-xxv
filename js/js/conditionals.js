@@ -31,7 +31,7 @@ if (totalBudget >= 40) {
   console.log("Let's go to Pizza Cuadrado!");
 } else if (totalBudget < 40 && totalBudget > 20) {
   console.log("Let's go to McDonald's");
-} else if (totalBudget >= 10) {
+} else if (totalBudget >= 5) {
   console.log("Let's go to Arturo's");
 } else {
   console.log("We don't have enough money to eat out. Sale arepa.");
