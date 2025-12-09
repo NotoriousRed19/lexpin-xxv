@@ -69,7 +69,7 @@ async function getAllCharacters() {
 const charactersContainer = document.getElementById("characters-container");
 
 getAllCharacters().then((data) => {
-  data.results.forEach((character) => {
+  data.items.forEach((character) => {
     const characterDiv = document.createElement("div");
     characterDiv.innerHTML = `
       <h2>${character.name}</h2>

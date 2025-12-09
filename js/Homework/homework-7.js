@@ -29,6 +29,8 @@ class TaskManager {
     const task = new Task(title);
     this.tasks.push(task);
 
+    localStorage.setItem("DataArray", this.tasks)
+
     this.updateDisplay();
 
     let msg = `Task "${title}" added successfully.`;
@@ -134,6 +136,10 @@ const addTaskBtn = document.querySelector("#add-task-btn");
 addTaskBtn.addEventListener("click", () => {
   let input = document.querySelector("#task-input");
   let title = input.value;
+  const text = 
   taskManager.add(title);
   input.value = "";
 });
+
+let oli = localStorage.getItem("DataArray")
+console.log(oli)
